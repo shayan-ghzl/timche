@@ -1,0 +1,231 @@
+@media (max-width: 1200px) {
+
+    .user-comments .comments-boxes .rating-star-bar .bar-object {
+        padding: 0 3rem 0 5rem;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .text-object {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 4rem;
+
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .bar-object {
+        flex: 0 0 calc(100% - 140px);
+        max-width: calc(100% - 140px);
+        padding-left: 0;
+
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .user-comments .comments-boxes .user-comment-item .comment-body {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        text-align: right;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta .user-name {
+        margin: 0;
+        width: 135px;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta .customer-status {
+        margin-top: 1.5rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta img.user-thumbnail {
+        margin: 0;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta>div {
+        margin-right: 2rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-content {
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+    .user-comments .comments-boxes .user-comment-item .comment-meta img.user-thumbnail {
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta .customer-status {
+        margin-top: 1.3rem;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter ul {
+        font-size: 15px;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter ul li {
+        padding: 1em 0.9em;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .user-comments .comments-boxes .user-comment-item .comment-meta .user-name {
+        font-size: 1.6rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-head .comment-date {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .user-comments .comments-boxes .user-comment-item .comment-body .useful-point button {
+        margin-right: 3rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-suggestion {
+        margin: 4rem 0;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta img.user-thumbnail {
+        width: 85px;
+        height: 85px;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta>div {
+        margin-right: 1.5rem;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .bar-object {
+        padding-right: 0;
+        margin-top: 2rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .rate-object {
+        margin: 0 auto;
+    }
+
+    .user-comments .comments-boxes .comments-title {
+        margin-bottom: 3rem;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .text-object {
+        margin-top: 2rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .positive_points ul,
+    .user-comments .comments-boxes .user-comment-item .comment-body .negative-points ul,
+    .user-comments .comments-boxes .rating-star-bar .text-object>p,
+    .user-comments .comments-boxes .user-comment-item .comment-body .useful-point {
+        font-size: 13px;
+    }
+
+
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .negative-points,
+    .user-comments .comments-boxes .user-comment-item .comment-body .positive_points>span,
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-content {
+        font-size: 14px;
+
+    }
+
+    .user-comments .comments-boxes .user-comment-item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter ul li:first-child {
+        display: none;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter ul {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter ul li:not(:first-child) {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+
+        padding: 0.8em 0.5em;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar {
+        margin-bottom: 3rem;
+    }
+
+    .user-comments .comments-boxes .users-commnet-filter {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .user-comments .comments-boxes .users-commnet-filter ul li:not(:first-child) {
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .bar-object .progress-container {
+        flex-wrap: wrap;
+    }
+
+    .user-comments .comments-boxes .rating-star-bar .bar-object .progress-container>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta img.user-thumbnail {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta>div {
+        margin-right: 1rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-content,
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-head .comment-date,
+    .user-comments .comments-boxes .users-commnet-filter ul {
+        font-size: 13px;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .positive_points ul,
+    .user-comments .comments-boxes .user-comment-item .comment-body .useful-point,
+    .user-comments .comments-boxes .user-comment-item .comment-body .negative-points ul {
+        font-size: 12px;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-meta {
+        margin-bottom: 2rem;
+    }
+
+    .user-comments .comments-boxes .user-comment-item .comment-body .comment-suggestion {
+        margin: 3.5rem 0;
+    }
+
+}

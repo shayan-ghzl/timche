@@ -1,0 +1,719 @@
+/*
+Theme Name: Timche Zargary
+Text Domain: timchezargary
+Version: 1.0
+Description: 
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: shayan ghazali
+Author URI: 
+Theme URI: 
+License: 
+License URI: 
+*/
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+@import "../variables.scss";
+@import "../css-reset.scss";
+
+#user-login-register {
+    background-color: $panelDarkBg;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+
+    .user-item-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .o-user-image {
+            position: relative;
+            text-align: center;
+
+
+            >img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin: 0 auto;
+                border: 1px solid white;
+            }
+
+            .o-user-name {
+                text-transform: none;
+                margin: 1.5rem auto 4.5rem auto;
+            }
+
+            .back-btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                outline: 0;
+                background-color: transparent;
+                padding: 8px;
+            }
+        }
+
+        >div {
+
+            .user-item-group {
+                padding: 0 2rem;
+
+                .user-popup-item {
+                    >a {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #707070;
+                        color: #b7b7b7;
+                        font-size: 15px;
+                        text-decoration: none;
+                        padding-bottom: 8px;
+
+                        &:hover {
+                            font-weight: 700;
+                        }
+
+                        >img {
+                            margin-left: 10px;
+                        }
+
+                        .latin-text {
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+
+            .o-user-submition {
+                text-align: center;
+                font-size: 13px;
+                margin-top: 60px;
+
+                button {
+                    outline: 0;
+                    color: #4c4c4c;
+                    background-color: #efc501;
+                    background: linear-gradient(45deg, #efc501, #ee8e12);
+                    border-radius: 11px;
+                    font-size: 19px;
+                    text-decoration: none;
+                    padding: 0.7em 4em;
+                    margin-bottom: 15px;
+                    transition: all 0.1s;
+                    white-space: nowrap;
+                    font-weight: 700;
+
+                    &:hover {
+                        transform: scale(0.98);
+                    }
+
+                    &:disabled {
+                        opacity: 0.7 !important;
+                        transform: none !important;
+                        cursor: initial !important;
+                    }
+                }
+
+                .open-register {
+                    color: $yellowBtn;
+                }
+            }
+        }
+    }
+
+    .register-form-section {
+        position: relative;
+        min-height: 100vh;
+
+        form#register-form {
+            padding: 0 4rem;
+            min-height: calc(100vh - 16rem);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .back-btn {
+                position: absolute;
+                top: 0;
+                left: 4rem;
+                outline: 0;
+                background-color: transparent;
+                padding: 8px;
+            }
+
+            >div {
+                margin-top: auto;
+                margin-bottom: 3rem;
+
+                .register-form-title {
+                    margin-top: 0;
+                    color: #b7b7b7;
+                    font-size: 3.2rem;
+                }
+
+                .o-input-group {
+                    position: relative;
+
+                    &:not(:first-of-type) {
+                        margin-top: 25px;
+                    }
+
+                    .input-icon {
+                        position: absolute;
+                        top: 7px;
+                        right: 0;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid #b7b7b780;
+                        color: #b7b7b7;
+                        padding: 6px 34px 6px 6px;
+                        font-size: 15px;
+
+                        /* Chrome, Safari, Edge, Opera */
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        /* Firefox */
+                        &[type="number"] {
+                            -moz-appearance: textfield;
+                        }
+
+                        &:read-only {
+                            opacity: 0.5 !important;
+                            user-select: none !important;
+                            pointer-events: none !important;
+                        }
+
+                        /* Change the white to any color ;) */
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus,
+                        &:-webkit-autofill:active {
+                            -webkit-box-shadow: 0 0 0 30px #000000d9 inset !important;
+                            -webkit-text-fill-color: #b7b7b7;
+                        }
+                    }
+
+                    .o-countdown-timer {
+                        position: absolute;
+                        top: 12px;
+                        line-height: 1;
+                        left: 0;
+                        font-size: 13px;
+                        letter-spacing: 2px;
+                        color: #fff;
+                    }
+
+                    .o-input-six-digit {
+                        padding-left: 50px !important;
+                    }
+
+                    .o-password-input {
+                        padding-left: 47px;
+                    }
+
+                    small {
+                        color: #ff4e4e;
+                        margin-top: 3px;
+                        font-size: 13px;
+                        display: none;
+                    }
+
+                    .o-password-visibility-btn {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 10px;
+                        outline: 0;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .o-register-form-submition {
+                font-size: 12px;
+                margin-top: auto;
+                color: #2c2c2c;
+                text-align: center;
+
+                button {
+                    outline: 0;
+                    color: #4c4c4c;
+                    background-color: #efc501;
+                    background: linear-gradient(45deg, #efc501, #ee8e12);
+                    border-radius: 11px;
+                    font-size: 19px;
+                    text-decoration: none;
+                    padding: 0.7em 4em;
+                    margin-bottom: 15px;
+                    transition: all 0.1s;
+                    white-space: nowrap;
+                    font-weight: 700;
+
+                    &:hover {
+                        transform: scale(0.98);
+                    }
+
+                    &:disabled {
+                        opacity: 0.7 !important;
+                        transform: none !important;
+                        cursor: initial !important;
+                    }
+                }
+
+                p:first-of-type {
+                    font-size: 15px;
+                    color: #fff;
+
+                    .open-login {
+                        color: #EFC501;
+                        margin-right: 15px;
+                    }
+                }
+
+                p:last-of-type {
+                    text-align: justify;
+                    line-height: 2;
+                    color: #b7b7b7;
+
+                    a {
+                        color: #b7b7b7;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .login-form-section {
+        position: relative;
+        min-height: 100%;
+
+        form#login-user-form {
+            padding: 0 4rem;
+            min-height: calc(100vh - 16rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .o-user-image {
+                position: relative;
+                text-align: center;
+
+                >img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    border: 1px solid white;
+                }
+
+                .o-user-name {
+                    text-transform: none;
+                    margin: 1.5rem auto 4.5rem auto;
+                }
+
+                .back-btn {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    outline: 0;
+                    background-color: transparent;
+                    padding: 8px;
+                }
+            }
+
+            .o-user-field {
+                .o-input-group {
+                    position: relative;
+
+                    &:not(:first-of-type) {
+                        margin-top: 25px;
+                    }
+
+                    .input-icon {
+                        position: absolute;
+                        top: 7px;
+                        right: 0;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid #b7b7b780;
+                        color: white;
+                        padding: 6px 34px 6px 6px;
+                        font-size: 14px;
+
+                        /* Chrome, Safari, Edge, Opera */
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        /* Firefox */
+                        &[type="number"] {
+                            -moz-appearance: textfield;
+                        }
+
+                        &:read-only {
+                            opacity: 0.5 !important;
+                            user-select: none !important;
+                            pointer-events: none !important;
+                        }
+                                      /* Change the white to any color ;) */
+                                      &:-webkit-autofill,
+                                      &:-webkit-autofill:hover,
+                                      &:-webkit-autofill:focus,
+                                      &:-webkit-autofill:active {
+                                          -webkit-box-shadow: 0 0 0 30px #000000d9 inset !important;
+                                          -webkit-text-fill-color: #b7b7b7;
+                                      }
+                    }
+
+                    .o-password-input {
+                        padding-left: 47px;
+                    }
+
+                    small {
+                        color: #ff4e4e;
+                        margin-top: 3px;
+                        font-size: 13px;
+                        display: none;
+                    }
+
+                    .o-password-visibility-btn {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 10px;
+                        outline: 0;
+                        background: transparent;
+                    }
+                }
+
+                .o-user-meta {
+                    display: flex;
+                    align-items: center;
+                    margin: 40px 0;
+                    line-height: 1;
+                    /* The custom checkbox start */
+
+                    .container-custom-userpopup {
+                        display: block;
+                        position: relative;
+                        cursor: pointer;
+                        user-select: none;
+                        margin: 0;
+                        padding-right: 30px;
+
+                        .custom-userpopup-text {
+
+                            font-size: 14px;
+                            display: block;
+                        }
+
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+
+                            &:checked {
+                                ~.checkmark-custom-userpopup {
+                                    background-color: white;
+                                    border: 1px solid !important;
+
+                                    &::after {
+                                        display: block !important;
+                                    }
+                                }
+                            }
+                                          /* Change the white to any color ;) */
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus,
+                        &:-webkit-autofill:active {
+                            -webkit-box-shadow: 0 0 0 30px #000000d9 inset !important;
+                            -webkit-text-fill-color: #b7b7b7;
+                        }
+                        }
+
+                        .checkmark-custom-userpopup {
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            height: 20px;
+                            width: 20px;
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                            background-color: #eee;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                                left: 50%;
+                                top: 50%;
+                                width: 11px;
+                                height: 12px;
+                                border: solid #b17102;
+                                border-width: 1px;
+                                background: #fca206;
+                                border-radius: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+
+                        &:hover {
+                            input~.checkmark-custom-userpopup {
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+
+                    .forgot-password {
+                        color: #b7b7b7;
+                        font-size: 14px;
+                        text-decoration: none;
+                        margin-right: auto;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .o-user-submition {
+                text-align: center;
+                font-size: 13px;
+
+
+                button {
+                    outline: 0;
+                    color: #4c4c4c;
+                    background-color: #efc501;
+                    background: linear-gradient(45deg, #efc501, #ee8e12);
+                    border-radius: 11px;
+                    font-size: 19px;
+                    text-decoration: none;
+                    padding: 0.7em 4em;
+                    margin-bottom: 15px;
+                    transition: all 0.1s;
+                    white-space: nowrap;
+                    font-weight: 700;
+
+                    &:hover {
+                        transform: scale(0.98);
+                    }
+
+                    &:disabled {
+                        opacity: 0.7 !important;
+                        transform: none !important;
+                        cursor: initial !important;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+
+                    .open-register {
+                        color: $yellowBtn;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .forgot-password-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .o-user-image {
+            position: relative;
+            text-align: center;
+
+            >img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin: 0 auto;
+                border: 1px solid white;
+            }
+
+            .o-user-name {
+                text-transform: none;
+                margin: 1.5rem auto 4.5rem auto;
+            }
+
+            .back-btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                outline: 0;
+                background-color: transparent;
+                padding: 8px;
+            }
+        }
+
+        .o-user-field {
+            margin: 3rem 0;
+
+            .o-input-group {
+                position: relative;
+
+                &:not(:first-of-type) {
+                    margin-top: 25px;
+                }
+
+                .input-icon {
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                }
+
+                input {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #b7b7b780;
+                    color: white;
+                    padding: 6px 34px 6px 6px;
+                    font-size: 14px;
+
+                    /* Chrome, Safari, Edge, Opera */
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    /* Firefox */
+                    &[type="number"] {
+                        -moz-appearance: textfield;
+                    }
+
+                    &:read-only {
+                        opacity: 0.5 !important;
+                        user-select: none !important;
+                        pointer-events: none !important;
+                    }
+                                  /* Change the white to any color ;) */
+                                  &:-webkit-autofill,
+                                  &:-webkit-autofill:hover,
+                                  &:-webkit-autofill:focus,
+                                  &:-webkit-autofill:active {
+                                      -webkit-box-shadow: 0 0 0 30px #000000d9 inset !important;
+                                      -webkit-text-fill-color: #b7b7b7;
+                                  }
+                }
+
+                small {
+                    color: #ff4e4e;
+                    margin-top: 3px;
+                    font-size: 13px;
+                    display: none;
+                }
+
+                .o-input-six-digit {
+                    padding-left: 50px !important;
+                }
+
+                .o-countdown-timer {
+                    position: absolute;
+                    top: 12px;
+                    line-height: 1;
+                    left: 0;
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .o-user-submition {
+            text-align: center;
+            font-size: 13px;
+
+
+            button {
+                outline: 0;
+                color: #4c4c4c;
+                background-color: #efc501;
+                background: linear-gradient(45deg, #efc501, #ee8e12);
+                border-radius: 11px;
+                font-size: 19px;
+                text-decoration: none;
+                padding: 0.7em 4em;
+                margin-bottom: 15px;
+                transition: all 0.1s;
+                white-space: nowrap;
+                font-weight: 700;
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+
+                &:disabled {
+                    opacity: 0.7 !important;
+                    transform: none !important;
+                    cursor: initial !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+    #user-login-register .login-form-section,
+    #user-login-register .register-form-section {
+        padding: 5rem 0;
+    }
+
+    #user-login-register .login-form-section form#login-user-form,
+    #user-login-register .register-form-section form#register-form {
+        min-height: calc(100vh - 10rem);
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 357px) {
+
+    #user-login-register .forgot-password-section .o-user-submition button,
+    #user-login-register .register-form-section form#register-form .o-register-form-submition button {
+        padding: 0.7em 2em;
+    }
+
+    #user-login-register .login-form-section form#login-user-form .o-user-field .o-user-meta {
+        line-height: 1.5;
+    }
+}
+@import '../category/alert-messtages.scss';
+@import '../category/div-loading.scss';

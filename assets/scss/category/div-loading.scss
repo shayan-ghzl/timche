@@ -1,0 +1,143 @@
+.div-loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: #00000052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    >div {
+        background-color: #fff;
+        width: 330px;
+        height: 200px;
+        border: 1px solid gray;
+        box-shadow: 0 0 10px -3px black;
+        padding: 2rem;
+
+        .mobile-header-logo {
+            color: black;
+            font-size: 11px;
+            line-height: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-weight: 700;
+            white-space: nowrap;
+
+
+
+            .o-persian-text {
+                margin-right: 5px;
+                text-align: right;
+                width: 56px;
+                user-select: none;
+                transition: all 0.6s ease-in-out;
+                animation: divLoadingAnim1 4s ease-in-out infinite;
+
+
+                span {
+                    display: block;
+
+                    &:first-child {
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                            background-color: black;
+                            position: absolute;
+                            bottom: -1px;
+                            transition: all 0.3s ease-in-out;
+                            animation: divLoadingAnim2 4s ease-in-out infinite;
+                        }
+
+                        padding-bottom: 4px;
+                    }
+
+                    &:last-child {
+                        margin-top: 6px;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+
+
+
+            .o-english-text {
+                margin-left: 5px;
+                text-align: left;
+                width: 56px;
+                letter-spacing: 1px;
+                user-select: none;
+                transition: all 0.6s ease-in-out;
+                direction: ltr;
+                animation: divLoadingAnim1 4s ease-in-out infinite;
+
+                span {
+                    display: block;
+                    text-transform: uppercase;
+
+                    &:first-child {
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                            background-color: black;
+                            position: absolute;
+                            bottom: -1px;
+                            transition: all 0.3s ease-in-out;
+                            animation: divLoadingAnim2 4s ease-in-out infinite;
+
+
+                        }
+
+                        padding-bottom: 4px;
+                    }
+
+                    &:last-child {
+                        margin-top: 6px;
+                    }
+                }
+            }
+
+
+        }
+        .loading-message{
+            text-align: center;
+            color: #2c2c22;
+            margin: 4rem 0 0 0;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@keyframes divLoadingAnim1 {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes divLoadingAnim2 {
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

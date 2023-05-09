@@ -1,0 +1,118 @@
+@media (max-width: 1200px) {}
+
+@media (min-width: 993px) {}
+
+@media (max-width: 992px) {
+
+    .user-comments .need-login-container .need-login-title {
+        flex: 0 0 calc(100% - (24px + 2rem));
+        max-width: calc(100% - (24px + 2rem));
+        margin-right: 0;
+        padding-right: 1rem;
+    }
+
+
+
+
+    .user-comments .user-comment-item:not(:first-child) {
+        margin-right: 0;
+    }
+
+    .user-comments .section-title {
+        display: block;
+    }
+
+
+    .user-comments .user-comment-item,
+    .user-comments .need-login-container {
+        background-color: #fff;
+    }
+
+    .user-comments .need-login-container .button {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .user-comments .user-comment-item .comment-meta {
+        img {
+            width: 85px;
+            height: 85px;
+        }
+
+        >div {
+            margin-right: 2rem;
+        }
+    }
+
+    .user-comments .user-comment-item .comment-main-text {
+        transform: none;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .user-comments .comment-textarea {
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        textarea {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 2rem 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+
+    .user-comments .user-comment-item {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .user-comments .user-comment-item .comment-meta>div {
+        margin-right: 1.5rem;
+    }
+
+    .user-comments .user-comment-item .comment-meta img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-comments .user-comment-item .comment-main-text,
+    .user-comments .user-comment-item .comment-meta>div .comment-date {
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media (max-width: 479px) {}
+@media (max-width: 700px) {
+
+    .user-comments .section-title{
+        margin-bottom: 4rem;
+    }
+    .user-comments{
+        padding: 4rem 4%;
+    }
+}
+
+@media (max-width: 357px) {
+
+    .user-comments .user-comment-item .comment-main-text,
+    .user-comments .user-comment-item .comment-meta>div .comment-date {
+        font-size: 12px;
+    }
+
+}

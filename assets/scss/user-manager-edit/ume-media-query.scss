@@ -1,0 +1,75 @@
+@media (max-width:1500px) {
+    .user-manager-edit .info-object {
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .user-manager-edit .info-object {
+        padding-right: 4rem;
+    }
+}
+
+@media (max-width:992px) {
+    .user-manager-edit .profile-object {
+        flex: 0 0 40%;
+        max-width: 40%;
+        padding-top: 40%;
+        margin: 0 auto;
+    }
+
+    .user-manager-edit .info-object {
+        padding-right: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 4rem;
+
+    }
+
+    .user-manager-edit button[type=submit] {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {}
+
+@media (max-width:576px) {
+    .user-manager-edit button[type=submit] {
+        font-size: 14px;
+    }
+    .user-manager-edit .info-object .o-row .form-group label,
+    .custom-select>label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .user-manager-edit .info-object .o-row .form-group {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 !important;
+    }
+
+    .user-manager-edit .info-object .o-row .form-group:nth-child(odd) {
+        margin-bottom: 15px;
+    }
+
+    .user-manager-edit .profile-object {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 50%;
+    }
+    .user-manager-edit .info-object{
+        margin-top: 2rem;
+    }
+    .user-manager-edit .info-object .o-row .form-group input , .custom-select{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:357px) {
+    .user-manager-edit .profile-object {
+        flex: 0 0 65%;
+        max-width: 65%;
+        padding-top: 65%;
+    }
+}

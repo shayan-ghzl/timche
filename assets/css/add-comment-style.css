@@ -1,0 +1,365 @@
+.add-comment {
+  width: 92%;
+  margin: 0 auto;
+  user-select: none;
+}
+.add-comment .rating-bar-container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.add-comment .rating-bar-container > .product-thumbnail {
+  flex: 0 0 25%;
+  max-width: 25%;
+  display: block;
+  object-fit: contain;
+}
+.add-comment .rating-bar-container .range-slider {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-right: 3rem;
+}
+.add-comment .rating-bar-container .range-slider .product-title {
+  margin-top: 0;
+  color: #494949;
+}
+.add-comment .rating-bar-container .range-slider .product-sub-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1882352941);
+  padding-bottom: 2.5rem;
+  margin: 0;
+  color: #b5b5b5;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  color: #515151;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object > span {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 700;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object input {
+  width: 70%;
+  cursor: pointer;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object > div > span {
+  margin-right: 15px;
+}
+
+.add-point-container {
+  display: flex;
+  position: relative;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+}
+.add-point-container .input-fields {
+  flex: 0 0 45%;
+  max-width: 45%;
+  padding-left: 55px;
+}
+.add-point-container .guide-line {
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding-right: 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.168627451);
+}
+.add-point-container .guide-line > .guide-title {
+  margin-top: 0;
+  color: #555;
+}
+.add-point-container .guide-line > div {
+  font-size: 14px;
+}
+.add-point-container .guide-line > div > .guide-box-heading {
+  color: #2980b9;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.add-point-container .guide-line > div > p:not(.guide-box-heading) {
+  line-height: 1.7;
+}
+.add-point-container .guide-line > div > ul {
+  font-size: 14px;
+  margin: 2rem 0 0 0;
+}
+
+.input-fields-title {
+  margin-bottom: 25px;
+}
+.input-fields-title span {
+  display: block;
+  margin-bottom: 12px;
+  color: #565656;
+  font-size: 16px;
+}
+.input-fields-title input {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  color: #717171;
+  font-size: 14px;
+  padding: 11px 12px 11px 50px;
+  width: 100%;
+}
+
+.group-bad-points,
+.group-good-points {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.group-bad-points > span,
+.group-good-points > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #565656;
+  font-size: 16px;
+}
+.group-bad-points > span::before,
+.group-good-points > span::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  content: "";
+  margin-left: 10px;
+}
+.group-bad-points .input-group,
+.group-good-points .input-group {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.group-bad-points .input-group input,
+.group-good-points .input-group input {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  color: #717171;
+  font-size: 14px;
+  padding: 11px 12px 11px 50px;
+  width: 100%;
+}
+.group-bad-points .input-group button,
+.group-good-points .input-group button {
+  outline: none;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #878787;
+  border-radius: 2px;
+  text-align: center;
+  padding: 1px 2px;
+  position: absolute;
+  left: 11px;
+  background: transparent;
+  opacity: 0.8;
+}
+.group-bad-points .input-group button:active,
+.group-good-points .input-group button:active {
+  transform: scale(0.95);
+}
+.group-bad-points .point-item,
+.group-good-points .point-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 12px;
+  line-height: 2;
+  word-break: break-all;
+}
+.group-bad-points .point-item button,
+.group-good-points .point-item button {
+  outline: none;
+  text-decoration: none;
+  padding: 0;
+  display: block;
+  background: transparent;
+  padding: 2px 4px 2px 2px;
+  margin-right: auto;
+}
+.group-bad-points .point-item button:active,
+.group-good-points .point-item button:active {
+  transform: scale(0.95);
+}
+.group-bad-points .point-item button img,
+.group-good-points .point-item button img {
+  max-width: initial;
+}
+
+.group-bad-points > span::before {
+  background: #fb3449;
+}
+
+.group-good-points > span::before {
+  background: #00bfd6;
+}
+
+.group-bad-points .point-item {
+  background-color: #fff3f4;
+  color: #fb3449;
+}
+
+.group-good-points .point-item {
+  background-color: #edf6f7;
+  color: #3a8c96;
+}
+
+.group-textarea {
+  margin-bottom: 25px;
+}
+.group-textarea > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #565656;
+  font-size: 16px;
+}
+.group-textarea textarea {
+  border: 1px solid #c8c8c8;
+  border-radius: 8px;
+  padding: 10px;
+  color: #424242;
+  width: 100%;
+  resize: vertical;
+  min-height: 160px;
+  font-size: 14px;
+}
+.group-textarea .textara_danger_invalid {
+  border: 2px solid #ef5662 !important;
+}
+
+.group-submit {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.group-submit button {
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 8px;
+  background-color: #00bfd6;
+  border: 1px solid #41a7b4;
+  color: #fff;
+  display: block;
+  flex: 0 0 45%;
+  max-width: 45%;
+  transition: background-color 0.3s;
+}
+.group-submit button:hover {
+  background-color: #00a7b9;
+}
+.group-submit > div {
+  flex: 0 0 55%;
+  max-width: 55%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.group-submit > div img {
+  margin: 0 15px 0 8px;
+}
+
+.group-footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+.group-footer p a {
+  color: #00bfd6;
+  border-bottom: 1px dashed #00bfd6;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.group-footer > a {
+  font-size: 13px;
+  color: #00bfd6;
+  border-bottom: 1px dashed #00bfd6;
+  padding-bottom: 3px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.group-footer > a img {
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .group-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .group-footer > a {
+    align-self: flex-end;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .add-point-container .guide-line {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    border: none;
+    order: 1;
+  }
+  .add-point-container .input-fields {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    order: 2;
+    margin-top: 40px;
+  }
+  .add-comment .rating-bar-container > .product-thumbnail {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .add-comment .rating-bar-container .range-slider {
+    padding: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object input {
+    flex-grow: 1;
+    width: unset;
+  }
+}
+@media (max-width: 576px) {
+  .group-submit button {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .group-submit div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 12px;
+  }
+  .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object > div > span {
+    margin-right: 10px;
+  }
+}

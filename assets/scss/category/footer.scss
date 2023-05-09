@@ -1,0 +1,157 @@
+#layout-footer {
+    white-space: nowrap;
+    border-top: 1px solid #707070;
+
+    .footer-top-strip {
+        color: #2C2C2C;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 3rem 4%;
+
+        .back-to-top {
+            border-radius: 50%;
+            outline: 0;
+            padding: 1em;
+            background-color: #bbbbbb;
+            display: none;
+        }
+
+        .footer-menu {
+            margin-right: 100px;
+
+            ul {
+                margin: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding: 0.5em 1.5em;
+
+                    a {
+                        color: #2c2c2c;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+
+        .footer-social-menu {
+            margin-right: auto;
+
+            ul {
+                margin: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    .path-color,
+                    .svg-color {
+                        fill: #b7b7b7;
+                    }
+
+                    &:hover {
+                        .facebook .path-color {
+                            fill: #4064ac !important;
+                        }
+
+                        .facebook.svg-color {
+                            fill: #4064ac !important;
+                        }
+
+                        .instagram .path-color {
+                            fill: #f24934 !important;
+                        }
+
+                        .instagram.svg-color {
+                            fill: #f24934 !important;
+                        }
+
+                        .twitter .path-color {
+                            fill: #1c9cea !important;
+                        }
+
+                        .twitter.svg-color {
+                            fill: #1c9cea !important;
+                        }
+
+                        .linkedin .path-color {
+                            fill: #0e72a3 !important;
+                        }
+
+                        .linkedin.svg-color {
+                            fill: #0e72a3 !important;
+                        }
+
+                        .whatsapp .path-color {
+                            fill: #24cc63 !important;
+                        }
+
+                        .whatsapp.svg-color {
+                            fill: #24cc63 !important;
+                        }
+
+                        .youtube .path-color {
+                            fill: #ed0000 !important;
+                        }
+
+                        .youtube.svg-color {
+                            fill: #ed0000 !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .logo-object {
+        display: flex;
+        align-items: flex-end;
+
+
+
+        >div {
+
+
+            font-weight: 700;
+            margin-right: 6px;
+            line-height: 1;
+
+
+            span {
+                display: block;
+
+                &:first-child {
+                    margin-bottom: 5px;
+                }
+            }
+
+        }
+    }
+
+    .footer-copy-right {
+        padding: 2.2rem 4%;
+        background-color: #2C2C2C;
+        text-align: left;
+        color: white;
+        line-height: 1;
+        font-size: 12px;
+
+        .copy-right-text {
+            margin-right: auto;
+            display: block;
+            line-height: 1.5;
+
+        }
+
+        .logo-object {
+            display: none;
+        }
+    }
+}

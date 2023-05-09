@@ -1,0 +1,606 @@
+.drop_container {
+    position: relative;
+    display: inline-block;
+
+    .drop_menu_btn {
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        line-height: 1.5;
+        position: relative;
+        border-radius: 9px;
+
+        &:hover {
+            transform: scale(1.07);
+
+            .red-dot {
+                transform: translate(3px, -3px) !important;
+            }
+        }
+    }
+
+    .open_drop_menu {
+        display: block !important;
+    }
+}
+
+/* -----------start user popup style--------- */
+
+.user_popup_container {
+    .drop_menu {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 15px);
+        display: none;
+        min-width: 300px;
+        background-color: $panelDarkBg;
+        z-index: 15;
+        color: #fff;
+        border-radius: 0 20px 20px 20px;
+        box-shadow: 0 0 10px -3px black;
+
+        .user_popup_inner {
+            padding: 2.5rem;
+
+            /* -----------start user logined style--------- */
+            .user-item-group {
+                padding: 0 2rem;
+
+                .user-popup-item {
+                    >a {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #707070;
+                        color: #B7B7B7;
+                        font-size: 13px;
+                        text-decoration: none;
+                        padding-bottom: 2px;
+
+                        &:hover {
+                            font-weight: 700;
+
+                        }
+
+                        >img {
+                            margin-left: 5px;
+                        }
+
+                        .latin-text {
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+
+            /* -----------end user logined style--------- */
+            /* -----------start user forgot password style--------- */
+            .forgot-inner-popup {
+                display: none;
+            }
+
+            .o-user-field {
+                .o-input-group {
+
+                    .o-input-six-digit {
+                        padding-left: 50px !important;
+
+                    }
+
+                    .o-countdown-timer {
+                        position: absolute;
+                        top: 12px;
+                        line-height: 1;
+                        left: 0;
+                        font-size: 13px;
+                        letter-spacing: 2px;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            /* -----------end user forgot password style--------- */
+            .o-user-image {
+                position: relative;
+                text-align: center;
+
+                >img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    border: 1px solid white;
+                }
+
+                .o-user-name {
+                    text-transform: none;
+                    margin: 1.5rem auto 4.5rem auto;
+                }
+
+                .back-btn {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    outline: 0;
+                    background-color: transparent;
+                    padding: 8px;
+                }
+            }
+
+            .o-user-field {
+                .o-input-group {
+                    position: relative;
+
+
+                    .input-icon {
+                        position: absolute;
+                        top: 7px;
+                        right: 0;
+                    }
+
+                    input {
+
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid #b7b7b780;
+                        color: white;
+                        padding: 6px 28px 6px 6px;
+                        font-size: 13px;
+                        margin-top: 15px;
+
+                        /* Chrome, Safari, Edge, Opera */
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        /* Firefox */
+                        &[type=number] {
+                            -moz-appearance: textfield;
+                        }
+
+                        &:read-only {
+                            opacity: 0.5 !important;
+                            user-select: none !important;
+                            pointer-events: none !important;
+                        }
+
+                        /* Change the white to any color ;) */
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus,
+                        &:-webkit-autofill:active {
+                            -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+                            -webkit-text-fill-color: #fff;
+                        }
+                    }
+
+                    .o-password-input {
+                        padding-left: 45px;
+                    }
+
+                    small {
+                        color: #ff4e4e;
+                        margin-top: 3px;
+                        font-size: 13px;
+                        display: none;
+                    }
+
+                    .o-password-visibility-btn {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 10px;
+                        outline: 0;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .o-user-meta {
+                display: flex;
+                align-items: center;
+                margin: 30px 0;
+                line-height: 1;
+                /* The custom checkbox start */
+
+                .container-custom-userpopup {
+                    display: block;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+                    margin: 0;
+
+                    .custom-userpopup-text {
+                        margin-right: 20px;
+                        font-size: 12px;
+                    }
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked {
+                            ~.checkmark-custom-userpopup {
+                                background-color: white;
+                                border: 1px solid !important;
+
+                                &::after {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .checkmark-custom-userpopup {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        height: 14px;
+                        width: 14px;
+                        transform: translateY(-50%);
+                        border-radius: 50%;
+                        background-color: #eee;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                            left: 50%;
+                            top: 50%;
+                            width: 7px;
+                            height: 8px;
+                            border: solid #b17102;
+                            border-width: 1px;
+                            background: #fca206;
+                            border-radius: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                    &:hover {
+                        input~.checkmark-custom-userpopup {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+
+                /* The custom checkbox end */
+                .forgot-password {
+                    color: #B7B7B7;
+                    font-size: 12px;
+                    text-decoration: none;
+                    margin-right: auto;
+
+                    &:hover {
+                        text-decoration: underline;
+
+                    }
+                }
+
+            }
+
+            .o-user-submition {
+                text-align: center;
+                font-size: 13px;
+                margin-top: 60px;
+
+                button,
+                .button {
+                    outline: none;
+                    color: #4C4C4C;
+                    background-color: #EFC501;
+                    background: linear-gradient(45deg, #EFC501, #EE8E12);
+                    border-radius: 6px;
+                    font-size: 13px;
+                    text-decoration: none;
+                    padding: 0.7em 4.6em;
+                    margin-bottom: 15px;
+                    transition: all 0.1s;
+
+                    &:hover {
+                        transform: scale(0.98);
+                    }
+
+                    &:disabled {
+                        opacity: 0.7 !important;
+                        transform: none !important;
+                        cursor: initial !important;
+                    }
+                }
+
+                .open-register {
+                    color: $yellowBtn;
+                }
+            }
+        }
+    }
+
+    .drop_menu_btn {
+        padding: .8rem;
+        background-color: #2C2C2C;
+
+        img {
+            border-radius: 5px;
+            max-width: initial;
+        }
+
+        .red-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: transform 0.3s;
+
+
+            &::before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: $popupBtnRedDot;
+                z-index: 2;
+                display: block;
+                border-radius: 50%;
+                margin: 1px 1px 0 0;
+            }
+        }
+    }
+
+
+}
+
+/* -----------end user popup style--------- */
+
+/* -----------start basket popup style--------- */
+
+.basket_popup_container {
+    .drop_menu {
+        position: absolute;
+        display: none;
+        left: -60px;
+        top: calc(100% + 15px);
+        width: 300px;
+        background-color: $panelDarkBg;
+        z-index: 15;
+        color: #fff;
+        border-radius: 0 20px 20px 20px;
+        box-shadow: 0 0 10px -3px black;
+
+
+        .basket_popup_inner {
+
+            /* -----------start empty basket style--------- */
+            .empty-basket-header {
+                text-align: center;
+                padding: 2rem;
+
+                img {
+                    margin: 0 auto;
+                }
+
+                .warn-title {
+                    color: $yellowBtn;
+                    margin: 1.5rem 0 0 0;
+                }
+            }
+
+            .empty-basket-body {
+                font-size: 12px;
+                padding: 2.5rem 4rem;
+                border-top: 1px solid #707070;
+
+                p {
+                    text-align: justify;
+                    white-space: normal;
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        color: $yellowBtn;
+                    }
+                }
+            }
+
+            /* -----------end empty basket style--------- */
+            .o-popup-header {
+                padding: 1.2rem 2rem;
+                user-select: none;
+
+                .total-price {
+                    color: white;
+                    text-align: center;
+                    margin: 1rem 0 1.7rem 0;
+                    font-weight: 500;
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    .go-to-checkout {
+                        outline: 0;
+                        color: #4C4C4C;
+                        background-color: $yellowBtn;
+                        background: linear-gradient(45deg, #EFC501, #EE8E12);
+                        border-radius: 6px;
+                        font-size: 13px;
+                        text-decoration: none;
+                        padding: 0.7em 1.5em;
+                        transition: all 0.1s;
+
+                        &:hover {
+                            transform: scale(0.98);
+                        }
+                    }
+
+                    .remove-all-btn {
+                        outline: 0;
+                        color: $redColor;
+                        background-color: transparent;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        line-height: 1;
+
+                        img {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .o-popup-body {
+                border-top: 1px solid #707070;
+                padding: 4px 0 14px 3px;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    max-height: 257px;
+                    overflow: hidden;
+                    overflow-y: auto;
+                    user-select: none;
+
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 10px white;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: $fixSliderBtn;
+                        border-radius: 10px;
+                    }
+
+
+
+                    li {
+                        margin: 0;
+                        display: flex;
+                        font-size: 11px;
+                        margin: 1rem 2rem 0 2rem;
+                        padding-bottom: 1rem;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #8b92a1b0;
+                        }
+
+                        .o-product-thumbnail {
+                            width: 65px;
+                            height: 65px;
+                            border: 2px solid white;
+                            border-radius: 50%;
+                        }
+
+                        >div {
+                            justify-content: space-between;
+                            flex-grow: 1;
+                            margin-right: 10px;
+                            padding-top: 2px;
+                            display: flex;
+                            flex-direction: column;
+
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                .o-product-title {
+                                    display: block;
+                                    overflow: hidden;
+                                    width: 170px;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+
+                            .o-product-subtitle {
+                                display: block;
+                                color: $fixSliderBtn;
+
+                            }
+
+                            .o-product-meta {
+                                display: flex;
+                                align-items: center;
+                                letter-spacing: 0.5px;
+
+
+
+
+                                .o-product-count {
+                                    margin-right: auto;
+                                    margin-left: 15px;
+                                    color: $fixSliderBtn;
+                                }
+
+                                .o-product-trash {
+                                    padding: 0.3em;
+                                    background-color: transparent;
+                                    outline: 0;
+
+                                    &:active {
+                                        transform: scale(0.9);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .drop_menu_btn {
+
+        padding: .8rem;
+        background-color: #2C2C2C;
+
+        img {
+            max-width: initial;
+        }
+
+        .red-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: transform 0.3s;
+
+            &::before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: $popupBtnRedDot;
+                z-index: 2;
+                display: block;
+                border-radius: 50%;
+                margin: 1px 1px 0 0;
+
+            }
+        }
+    }
+}
+
+/* -----------end basket popup style--------- */

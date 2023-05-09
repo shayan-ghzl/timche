@@ -1,0 +1,159 @@
+@import "./variable.scss";
+@import "./wp-reset.scss";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #eceff1;
+}
+
+.login-box {
+    flex: 0 0 350px;
+    max-width: 350px;
+    user-select: none;
+
+
+    background-color: white;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+
+    padding: 4rem 3rem;
+   
+}
+
+.wrong-message {
+    color: #f13548;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.login-fields {
+    form {
+        .form-control-group {
+            position: relative;
+&:last-of-type{
+    input {
+        padding-left: 45px !important;
+        margin-bottom: 25px !important;
+    }
+}
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: 1px solid #a5a5a5;
+                outline: none;
+                border-radius: 3px;
+                display: block;
+                padding: 6px;
+                color: black;
+                margin-bottom: 1.5rem;
+                font-size: 15px;
+            }
+
+            small {
+                display: none;
+            }
+
+       
+
+            .o-password-visibility-btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px;
+                background: transparent;
+                outline: none;
+            }
+        }
+
+        button[type=submit] {
+            width: 100%;
+            display: block;
+            outline: none;
+            text-decoration: none;
+            background-color: #007bff;
+            border-radius: 3px;
+            font-size: 15px;
+          
+            padding: 9px;
+            color: white;
+            font-weight: 700;
+            transition: all 0.3s;
+       
+            cursor: pointer;
+            &:hover{
+                background-color: #1988ff;
+            }
+           
+        }
+
+        .remember-checkbox {
+            display: block;
+            position: relative;
+            padding-right: 26px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 12px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            .checkmark_custom {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 16px;
+    width: 16px;
+                border-radius: 4px;
+                background-color: #eee;
+                border: 1px solid #cecece;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 6px;
+                    top: 2px;
+                    width: 5px;
+                    height: 9px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+
+           
+        }
+
+    }
+}
+
+.login-fields form .remember-checkbox input:checked+.checkmark_custom {
+   
+        background-color: #2196F3 !important;
+        border: none;
+        &::after {
+            display: block !important;
+        }
+}
+@media (max-width:576px){
+    .login-box{
+        flex: 0 0 300px;
+        max-width: 300px;
+    }
+}

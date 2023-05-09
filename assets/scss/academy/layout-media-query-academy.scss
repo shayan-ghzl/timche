@@ -1,0 +1,278 @@
+@media (max-width:1200px) {
+
+
+    #layout-header {
+
+
+        .layout-header-container {
+
+
+            .component-grouping {
+
+
+                .searchform {
+                    margin: 0 30px;
+                }
+
+
+            }
+
+
+            .menu-bar {
+
+
+                ul {
+
+                    li {
+
+                        a {
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+    }
+
+
+}
+
+
+@media (max-width:992px) {
+    main.main-content{
+        padding-top: 175px;
+    }
+    .fix-content {
+        .fix-header-container {
+            #layout-header {
+                height: 175px;
+                padding-bottom: 0;
+
+                .layout-header-container {
+
+
+                    .component-grouping {
+
+
+                        .searchform {
+                            margin: 0;
+                            position: absolute;
+                            left: 0;
+                            top: 55px;
+                            right: 0;
+                            width: 100%;
+                        }
+
+
+                    }
+
+
+                    .menu-bar {
+                        margin: 0;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 105px;
+
+                        width: 100%;
+
+                        ul {
+                            justify-content: space-between;
+
+                            li {
+
+                                a {
+                                    font-weight: 700;
+
+                                    &:hover {
+                                        transform: none;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+
+
+
+
+                }
+
+                .side-nav-container {
+                    border-radius: 0;
+
+                    .side-nav-logo-container {
+                        display: flex;
+                        align-items: center;
+
+                        .c-logo-place {
+                            margin-right: auto;
+                            padding-right: calc(5% + 32px);
+
+                        }
+
+                        .c-close-btn {
+                            display: block !important;
+
+                        }
+                    }
+                }
+
+                .side-nav-active {
+                    width: 100% !important;
+                }
+
+            }
+        }
+    }
+
+    #layout-footer {
+
+
+        .footer-top-strip {
+            .back-to-top {
+                display: block !important;
+            }
+
+            .logo-object {
+                display: none !important;
+            }
+
+            .footer-menu {
+                display: none !important;
+
+                ul {
+                    li {
+
+                        a {}
+                    }
+
+                }
+            }
+
+            .footer-social-menu {
+                ul {}
+            }
+        }
+
+        .logo-object {
+
+            >div {
+
+                span {
+                    &:first-child {}
+                }
+
+            }
+        }
+
+        .footer-copy-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.7rem 4%;
+
+            .logo-object {
+                display: flex !important;
+            }
+
+            .copy-right-text {
+                white-space: normal;
+            }
+        }
+    }
+
+    .close {
+        animation: animCloseMobile 0.5s ease-in-out forwards !important;
+    }
+
+    .open {
+        animation: animHeaderMobile 0.5s ease-in-out forwards !important;
+    }
+}
+
+@media (max-width:768px) {}
+
+@media (max-width:576px) {
+    .fix-content .fix-header-container #layout-header .layout-header-container .basket_popup_container {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .fix-content .fix-header-container #layout-header .layout-header-container .component-grouping .basket_popup_container .drop_menu_btn img {
+        width: 20px !important;
+    }
+
+    .drop_container .drop_menu_btn {
+        border-radius: 5px;
+    }
+
+    .basket_popup_container .drop_menu_btn {
+        padding: 0.7rem;
+
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .component-grouping .user_popup_container .drop_menu_btn img {
+        width: 20px !important;
+        border-radius: 5px;
+
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo {
+        font-size: 9px;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-persian-text {
+        width: 46px;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-english-text {
+        width: 46px;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo>img {
+        width: 28px !important;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-english-text span:first-child {
+        padding-bottom: 2px;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-persian-text span:first-child {
+        padding-bottom: 3px;
+
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-persian-text span:last-child {
+        margin-top: 4px;
+        margin-bottom: 1px;
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .mobile-header-logo .o-english-text span:last-child {
+        margin-top: 4px;
+
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .component-grouping:last-of-type {
+        width: calc(50% - 50px);
+    }
+
+    .fix-content .fix-header-container #layout-header .layout-header-container .component-grouping:first-of-type {
+        width: calc(50% - 80px);
+
+    }
+    .fix-content .fix-header-container #layout-header .layout-header-container .menu-bar ul li a{
+        padding: 0.5rem 1rem;
+    }
+}

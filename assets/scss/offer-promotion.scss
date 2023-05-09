@@ -1,0 +1,100 @@
+.offer-promotion-container {
+    margin-right: 5%;
+    margin-top: 1.5rem;
+
+    .offer-promo-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 30%;
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 2rem;
+        }
+
+        >a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.349);
+                transition: all 0.3s;
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: initial;
+                object-fit: cover;
+            }
+        }
+
+        @media (min-width:769px) {
+            &:hover {
+
+                >a {
+                    &::before {
+                        width: 100% !important;
+                    }
+
+                }
+
+                .promo-message {
+                    left: 50% !important;
+                    opacity: 1 !important;
+
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            >a {
+                &::before {
+                    width: 100% !important;
+                }
+            }
+
+            .promo-message {
+
+                left: 50% !important;
+                opacity: 1 !important;
+            }
+        }
+
+
+
+
+        .promo-message {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            color: $redColor;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s;
+
+            .persian-text {
+                margin: 0;
+                line-height: 1;
+
+            }
+
+            .latin-text {
+                margin-top: 2rem;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+        }
+    }
+}

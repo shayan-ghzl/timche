@@ -1,0 +1,100 @@
+@media (max-width:1500px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:992px) {
+
+    .user-details .user-details-head .user-info {
+        padding-right: 3rem;
+    }
+
+    .user-details .user-details-body .tab-layout-body>div .dashboard .dashboard-table {
+        padding-right: 3rem;
+    }
+
+    .user-details .user-details-body .tab-layout-header ul {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .user-details .user-details-body .tab-layout-header ul li {
+        width: 160px;
+    }
+}
+
+@media (min-width:769px) {
+    .user-details .user-details-head .user-info {
+        flex: 0 0 calc(100% - 270px);
+        max-width: calc(100% - 270px);
+    }
+}
+
+@media (max-width:768px) {
+    .user-details .user-details-head .user-avatar {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .user-details .user-details-head .user-info .user-info-title {
+        text-align: center;
+    }
+
+    .user-details .user-details-head .user-info {
+
+        padding: 0;
+        margin: 3rem auto 0 auto;
+    }
+
+    .user-details .user-details-head .user-avatar img {
+        width: 235px;
+        height: 235px;
+    }
+
+    .user-details .user-details-body .tab-layout-body>div .dashboard .btn-group {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .user-details .user-details-body .tab-layout-body>div .dashboard .dashboard-table {
+        padding: 0;
+        margin-top: 4rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .user-details .user-details-body .tab-layout-body>div .dashboard .dashboard-table table tr td {
+        line-height: 1.5;
+        padding: 0.7em;
+    }
+}
+
+@media (max-width:576px) {
+    .user-details .user-details-body .tab-layout-header ul li {
+        margin-right: 1rem;
+        font-size: 15px;
+        width: 150px;
+        padding: 13px 0;
+    }
+
+    .user-details .user-details-head .user-info ul,
+    .user-details .user-details-body .tab-layout-body>div .dashboard .dashboard-table table,
+    .user-details .user-details-body .tab-layout-body>div .order-list-contain .order-item .collapse-btn {
+        font-size: 13px;
+    }
+
+    .user-details .user-details-head .user-info ul li:first-child,
+    .user-details .user-details-body .tab-layout-body>div .order-list-contain .order-item .collapse-body table {
+        font-size: 12px;
+    }
+
+    .user-details .user-details-head .user-avatar img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .user-details .user-details-body .tab-layout-body>div .order-list-contain .order-item:not(:first-child) {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width:357px) {}

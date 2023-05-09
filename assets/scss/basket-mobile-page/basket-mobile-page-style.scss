@@ -1,0 +1,271 @@
+/*
+Theme Name: Timche Zargary
+Text Domain: timchezargary
+Version: 1.0
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: shayan ghazali
+Author URI: 
+Theme URI: 
+License: 
+License URI: 
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3.  Media Queries
+
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+// this is about initial
+@import "../variables.scss";
+@import "../css-reset.scss";
+
+
+
+/* -----------start basket popup style--------- */
+
+#basket-content {
+    background-color: $panelDarkBg;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+
+    .basket-has-product {
+   
+
+        .basket-page-header {
+            padding: 1.2rem 2rem;
+            user-select: none;
+            position: relative;
+
+            .back-btn{
+                position: absolute;
+                top: 1.5rem;
+                left: 2rem;
+                outline: 0;
+                background-color: transparent;
+                padding: 8px;
+            }
+
+            .total-price {
+                color: white;
+                text-align: center;
+                margin: 1rem 0 1.7rem 0;
+                font-weight: 500;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .go-to-checkout {
+                    outline: 0;
+                    color: #4C4C4C;
+                    background-color: $yellowBtn;
+                    background: linear-gradient(45deg, #EFC501, #EE8E12);
+                    border-radius: 6px;
+                    font-size: 13px;
+                    text-decoration: none;
+                    padding: 0.7em 1.5em;
+                    transition: all 0.1s;
+
+                    &:hover {
+                        transform: scale(0.98);
+                    }
+                }
+
+                .remove-all-btn {
+                    outline: 0;
+                    color: $redColor;
+                    background-color: transparent;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    line-height: 1;
+
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .basket-page-body {
+            border-top: 1px solid #707070;
+            padding: 4px 0 14px 3px;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                max-height: calc(100vh - 130px);
+                overflow: hidden;
+                overflow-y: auto;
+                user-select: none;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 10px white;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: $fixSliderBtn;
+                    border-radius: 10px;
+                }
+
+
+
+                li {
+                    margin: 0;
+                    display: flex;
+                    font-size: 11px;
+                    margin: 1rem 2rem 0 2rem;
+                    padding-bottom: 1rem;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #8b92a1b0;
+                    }
+
+                    .o-product-thumbnail {
+                        width: 65px;
+                        height: 65px;
+                        border: 2px solid white;
+                        border-radius: 50%;
+                    }
+
+                    >div {
+                        justify-content: space-between;
+                        flex-grow: 1;
+                        margin-right: 10px;
+                        padding-top: 2px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .o-product-title {
+                            display: block;
+                            overflow: hidden;
+                            width: 170px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        .o-product-subtitle {
+                            display: block;
+                            color: $fixSliderBtn;
+
+                        }
+
+                        .o-product-meta {
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: 0.5px;
+
+
+
+
+                            .o-product-count {
+                                margin-right: auto;
+                                margin-left: 15px;
+                                color: $fixSliderBtn;
+                            }
+
+                            .o-product-trash {
+                                padding: 0.3em;
+                                background-color: transparent;
+                                outline: 0;
+
+                                &:active {
+                                    transform: scale(0.9);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .basket-is-empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        .back-btn{
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            outline: 0;
+            background-color: transparent;
+            padding: 8px;
+        }
+        .basket-empty-message {
+            .basket-empty-header {
+                text-align: center;
+                padding: 2rem;
+
+                img {
+                    margin: 0 auto;
+                }
+
+                .warn-title {
+                    color: $yellowBtn;
+                    margin: 1.5rem 0 0 0;
+                }
+            }
+
+            .basket-empty-body {
+                font-size: 12px;
+                padding: 2.5rem 4rem;
+                border-top: 1px solid #707070;
+
+                p {
+                    text-align: justify;
+                    line-height: 2;
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 3rem;
+
+                    a {
+                        color: $yellowBtn;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:375px){
+    #basket-content .basket-has-product .basket-page-header .total-price{
+        text-align: right;
+    }
+}
+
+
+/* -----------end basket popup style--------- */

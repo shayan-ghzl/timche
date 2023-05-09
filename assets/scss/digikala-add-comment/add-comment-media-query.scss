@@ -1,0 +1,74 @@
+
+
+@media (max-width: 1200px) {
+    .group-footer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .group-footer>a {
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .add-point-container .guide-line {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+        border: none;
+        order: 1;
+    }
+
+    .add-point-container .input-fields {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+        order: 2;
+        margin-top: 40px;
+    }
+
+    .add-comment .rating-bar-container > .product-thumbnail{
+        flex: 0 0 100%;
+        max-width: 100%;
+      
+    }
+    .add-comment .rating-bar-container .range-slider{
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object input{
+        flex-grow: 1;
+        width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+   
+    .group-submit button{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .group-submit div{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 12px;
+    }
+
+    .add-comment .rating-bar-container .range-slider .range-slider-grid > .range-slider-object > div > span{
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 357px) {}
+

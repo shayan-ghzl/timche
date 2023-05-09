@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+    .comments-questions {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 993px) {
+
+    .comments-questions .tab-item>button {
+        &:hover {
+            background-color: #efc501;
+        }
+    }
+
+    .comments-questions .tab-item>.active-tab {
+        background-color: #efc501;
+    }
+
+    .comments-questions {
+        transition: height 0.2s;
+
+        .item-body {
+            position: absolute;
+            top: calc(10rem + 60px);
+            right: 7.5%;
+            left: 7.5%;
+        }
+    }
+
+    .comments-questions .tab-item>.active-tab+div {
+        display: block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .comments-questions .item-body .onelevel_collapse_body {
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+    }
+
+    .comments-questions .item-body .onelevel_collapse_btn {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+
+
+    .comments-questions .item-body {
+        padding-top: 2rem;
+    }
+
+    .comments-questions .tab-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    .comments-questions .tab-item>button {
+        background-color: #efc501;
+    }
+
+    .comments-questions .item-body .user-comment-item:not(:first-child) {
+        margin-right: 0;
+    }
+
+
+
+
+    .comments-questions .item-body .need-login-container .button {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+
+
+
+
+    .comments-questions .item-body .comment-textarea {
+        padding: 2rem;
+        flex-wrap: wrap;
+        
+       
+
+
+            textarea {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            button {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 2rem 0 0 0;
+            }
+        
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .comments-questions .item-body .onelevel_collapse_body p {
+        font-size: 14px;
+    }
+
+
+    .comments-questions {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .comments-questions .item-body .onelevel_collapse_btn .collapse-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 357px) {
+
+    .comments-questions .item-body .onelevel_collapse_body p {
+        font-size: 12px;
+    }
+}

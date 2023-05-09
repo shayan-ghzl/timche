@@ -1,0 +1,149 @@
+.fix-slider-container {
+  
+    height: calc(100vh - 15px);
+
+
+
+    .fix-slider-wrapper {
+        height: calc(100vh - 15px);
+
+
+        .fix-slider-page {
+            height: calc(100vh - 15px);
+            &::before {
+                content: '';
+           
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: -1px;
+                right: -1px;
+                display: block;
+                background-image: url('assets/img/fix-slider-rounded.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                z-index: 8;
+            }
+
+
+            >img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                margin-right: 1px;
+              
+            }
+
+            .portrait-mode {
+                display: none;
+            }
+
+            .landscape-mode {}
+
+            >.fix-slider-message {
+                position: absolute;
+                left: 60px;
+                bottom: 145px;
+                color: white;
+                width: 300px;
+                z-index: 9;
+
+                .fix-slider-message-title {
+                    line-height: 1.6;
+                    margin-bottom: 1rem;
+
+                    span {
+                        font-size: 10rem;
+                        line-height: 1;
+                        margin: 0 5px;
+                    }
+                }
+
+                .progressive-object {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+
+                    .progress-row {
+                        flex-grow: 1;
+                        background: white;
+                        height: 4px;
+                        margin-right: 10px;
+
+                    }
+                }
+
+                .button {
+                    margin-top: 2rem;
+                    display: flex;
+                    align-items: center;
+                    background: $fixSliderBtn;
+                    color: black;
+                    justify-content: center;
+                    font-size: 14px;
+                    border-radius: 7px;
+                    width: 260px;
+                    margin-right: auto;
+                    padding: 1.3em 1.44em;
+                    text-decoration: none;
+
+                    &:hover {
+                        background: $fixSliderBtnHover;
+                    }
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// custom pagination and bullet custom style with numbers start
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 60px;
+    height: 4px;
+    opacity: 0;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 20px;
+}
+
+.swiper-container-horizontal>.fix-slider-custom-pagination .swiper-pagination-bullets {
+    position: initial;
+    bottom: unset;
+    left: unset;
+    width: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #ffffff56;
+    margin: 0 25px 3px 25px;
+    display: flex;
+
+}
+
+.fix-slider-custom-pagination {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+    white-space: nowrap;
+
+}
+
+// custom pagination and bullet custom style with numbers end

@@ -1,0 +1,26 @@
+/*
+Theme Name: Timche Zargary
+Text Domain: timchezargary
+Version: 1.0
+Description: 
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: shayan ghazali
+Author URI: 
+Theme URI: 
+License: 
+License URI: 
+*/
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+
+@import "../variables.scss";
+@import "../css-reset.scss";
+@import "./layout-public.scss";
+@import "./alert-messtages.scss";
+@import "./div-loading.scss";
+
+
+

@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+    .Consulting-banner .section-title {
+        font-size: 3.5rem;
+    }
+
+    .Consulting-banner {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .Consulting-banner a.button {
+        display: none;
+    }
+
+    .Consulting-banner>img {
+        display: block;
+    }
+
+    .Consulting-banner .section-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .Consulting-banner {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .Consulting-banner .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .Consulting-banner .section-title {
+        font-size: 2rem;
+    }
+
+    .Consulting-banner {
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 357px) {}

@@ -1,0 +1,123 @@
+/*-------------------start basket page counter--------------------*/
+.so_add_basket {
+    background-color: #B41313;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    padding: 0.8em 1.44em;
+    font-size: 16px;
+    margin-top: 3rem;
+
+    img {
+        margin-left: 15px;
+        margin-bottom: 3px;
+    }
+}
+
+.so_item_counter {
+    height: 52px;
+    padding: 6px 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+
+    button {
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 42px;
+        height: 100%;
+        cursor: pointer;
+       
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+        img {
+            margin: auto;
+        }
+    }
+    .so_remove_btn{
+        background-color: $redColor;
+    }
+    .so_add_btn{
+        background-color: #169a42;
+    }
+
+    .so_focus_input {
+        input {
+            height: 100%;
+            width: 52px;
+            background: #b7b7b7;
+            text-align: center;
+            direction: ltr;
+            border: 0;
+            outline: 0;
+            color: #2c2c2c;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 0 5px;
+            padding: 0;
+            pointer-events: none !important;
+            -moz-appearance: textfield;
+       
+           
+        }
+    }
+}
+.so_item_counter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*-------------------end basket page counter--------------------*/
+.animate-check-mark {
+    width: 27px;
+    margin-left: 15px;
+    display: block;
+}
+
+.animate-check-mark .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
+.animate-check-mark .path.circle {
+    animation: dash .9s ease-in-out;
+}
+
+.animate-check-mark .path.check {
+    stroke-dashoffset: -100;
+    animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}

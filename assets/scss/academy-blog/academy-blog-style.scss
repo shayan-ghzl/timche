@@ -1,0 +1,257 @@
+
+@import "../variables.scss";
+
+
+
+.head-banner {
+	width: 100%;
+	height: 25vw;
+	background-size: 100%;
+	background-image: url("assets/img/blog-head-banner.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 30%;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+	padding: 0;
+	user-select: none;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-image: linear-gradient(to top, #2c2c2c, transparent);
+		z-index: -1;
+	}
+
+	>div {
+		position: absolute;
+		top: 50%;
+		right: 7.5%;
+		transform: translateY(-50%);
+
+		.head-title {
+			z-index: 1;
+			text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+			font-size: 7rem;
+			margin-top: 0;
+		}
+
+		.head-subtitle {
+			z-index: 1;
+			text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+			font-weight: 400;
+			margin: 0;
+		}
+	}
+}
+
+.blog-list {
+	padding: 0;
+
+	.category-list {
+		display: flex;
+		align-items: center;
+		background-color: #2c2c2c;
+		border-bottom: 1px solid #B7B7B750;
+		padding-bottom: 1.5rem;
+		padding-left: 4%;
+		padding-right: 4%;
+
+		.category_dropdown_container {
+			position: relative;
+			width: 170px;
+
+			select {
+				display: none;
+			}
+		}
+
+
+		.select-selected {
+			background-color: #fff;
+			border-radius: 3px;
+			font-size: 16px;
+			color: #4c4c4c;
+			padding: 0.5em 1.5em;
+			cursor: pointer;
+			user-select: none;
+		}
+
+
+		.select-selected:after {
+			position: absolute;
+			content: "";
+			top: 17px;
+			left: 1.5em;
+			width: 8px;
+			height: 8px;
+			border: 1px solid;
+			border-color: transparent #4c4c4c #4c4c4c transparent;
+			transform: rotate(45deg);
+		}
+
+
+		.select-selected.select-arrow-active:after {
+			transform: rotate(-135deg);
+			top: 20px;
+		}
+
+
+		.select-items {
+			position: absolute;
+			background-color: #fff;
+			top: 100%;
+			left: 0;
+			right: 0;
+			z-index: 99;
+			border-radius: 3px;
+			box-shadow: 0 3px 10px -3px black;
+
+
+			div {
+				color: #4c4c4c;
+				padding: 0.6em 1.5em;
+				cursor: pointer;
+				user-select: none;
+				font-size: 14px;
+				font-weight: 500;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid #4C4C4C4d;
+				}
+			}
+		}
+
+		.select-hide {
+			display: none;
+		}
+
+		.select-items div:hover,
+		.same-as-selected {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+		>ul {
+			list-style: none;
+			margin: 0 auto 0 0;
+			display: flex;
+			font-size: 14px;
+
+			li {
+				margin: 0;
+				background-color: #00000080;
+				border-radius: 4px;
+				padding: 0.75em 1em;
+				transition: background-color .2s;
+				transition-delay: 0.07s;
+
+				a {
+					display: flex;
+					align-items: center;
+					color: #fff;
+					text-decoration: none;
+
+					img {
+						width: 24px;
+						margin-left: 15px;
+					}
+				}
+
+				&:first-child {
+
+					&:hover {
+						background-color: #0392ff;
+					}
+				}
+
+				&:last-child {
+					margin-right: 1.5rem;
+
+					&:hover {
+						background-color: #f10c62;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-post-container {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		background-color: #2c2c2c;
+		padding: 4rem 4% 4rem 4%;
+
+		>div {
+			&:not(:last-child) {
+				position: relative;
+				flex: 0 0 33.333333%;
+				max-width: 33.333333%;
+				padding-top: 36.666666%;
+
+				.card-item {}
+			}
+		}
+
+		// this is pagination
+		.pagination-container {
+			margin-top: 6rem;
+			margin-right: 30px;
+			user-select: none;
+			flex: 0 0 100%;
+			max-width: 100%;
+
+			ul {
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				list-style: none;
+				margin: 0;
+				white-space: nowrap;
+				text-align: center;
+				cursor: pointer;
+				color: #B7B7B7;
+
+				li {
+					padding: 0.3rem 0.7rem;
+					margin: 0 1rem 0 0;
+					z-index: 2;
+
+					img {
+						display: none;
+					}
+				}
+
+				.next-page,
+				.prev-page {
+					&:active {
+						transform: scale(0.97);
+					}
+				}
+
+
+
+				.current-page {
+					background-color: #EFC501;
+					border-radius: 2px;
+					color: #2C2C2C;
+				}
+
+				.disable-page {
+					opacity: 0.5;
+					transform: none !important;
+				}
+			}
+		}
+	}
+}
+
+
+@import "./subscription-blog-componnet.scss";
+@import "./subscription-blog-componnet-media-query.scss";
+@import "./media-query-head-banner.scss";
+@import "./media-query-post-item.scss";

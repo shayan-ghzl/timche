@@ -1,0 +1,77 @@
+@media (max-width:1500px) {
+    @media (min-width:1201px) {}
+}
+
+@media (max-width:1200px) {
+    .tab-layout{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (min-width:993px) {
+
+    .tab-layout .tab-item .item-body {
+  
+        position: absolute;
+        top: calc(10rem + 60px);
+        right: 7.5%;
+        left: 7.5%;
+    }
+    .tab-layout .tab-item .active-tab + div {
+        display: block !important;
+    }
+    .tab-layout .tab-item .active-tab{
+        color: #4C4C4C;
+        background-color: #EFC501
+    }
+    .tab-layout .tab-item > button:not(.active-tab):hover{
+        color: #4C4C4C;
+        background-color: #EFC501;
+    }
+}
+
+@media (max-width:992px) {
+    .tab-layout .tab-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .item-body {
+         padding-top: 2rem;
+        }
+        // .item-body {
+        //     padding: 0;
+        //     max-height: 0;
+        //     overflow: hidden;
+        //     transition: max-height 0.2s ease-out;
+        // }
+
+
+    }
+    .tab-layout .tab-item > button{
+        color: #4C4C4C;
+        background-color: #EFC501;
+    }
+    .tab-layout .tab-item{
+        padding-bottom:1.5rem ;
+    }
+    // .tab-layout .tab-item .active-tab{
+    //     margin-bottom: 2rem;
+    // }
+
+}
+
+@media (max-width:768px) {
+    .tab-layout .tab-item > button{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:576px) {
+    .tab-layout{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media (max-width:357px) {}

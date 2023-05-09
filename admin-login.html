@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timche Zargari Website About Gold">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Shayan Ghazali">
+    <title>تیمچه زرگری</title>
+    <link rel="stylesheet" href="admin-login-style.css">
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <p class="wrong-message">رمز و یا کلمه عبور درست نیست</p>
+
+        <div class="login-fields">
+            <form>
+                <div class="form-control-group">
+                    <input type="text" placeholder="نام کاربری">
+                    <small>نادرست است لطفا اصلاح نمایید</small>
+                </div>
+                <div class="form-control-group">
+                    <input type="password" placeholder="رمز عبور">
+                    <small>نادرست است لطفا اصلاح نمایید</small>
+                    <button type="button" class="o-password-visibility-btn">
+                        <img src="assets/img/svg-icon/register-form-visibility-show.svg" style="display: none;" width="20" height="20" alt="visibility icon">
+                        <img class="visible-hide-icon" src="assets/img/svg-icon/register-form-visibility-hide.svg" width="20" height="20" alt="visibility icon" style="display: block;">
+                    </button>
+                </div>
+                <label class="remember-checkbox">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark_custom"></span>
+                    اطلاعات را به خاطر بسیار
+                </label>
+                <button type="submit">ورود</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="assets/js/password-visibility.js"></script>
+
+</body>
+
+</html>

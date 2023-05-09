@@ -1,0 +1,45 @@
+#bd-main-birthday-input {
+    table {
+        margin: 0;
+
+        th,
+        td {
+            padding: 0;
+            font-size: 14px;
+            line-height: 2;
+        }
+    }
+
+    button {
+        text-decoration: none;
+        color: black;
+        padding: 0;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .bd-next,
+    .bd-prev {
+        display: none;
+    }
+
+    .bd-title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bd-goto-today{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+    }
+    select{
+        font-family: 'IRANSANS';
+        font-size: 14px;
+    }
+
+    .bd-selected-day{
+        color: red;
+        font-weight: 700;
+    }
+}

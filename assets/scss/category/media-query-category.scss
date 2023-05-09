@@ -1,0 +1,256 @@
+@media (max-width:1200px) {
+
+    .category-page-content {
+
+
+        >aside {
+            padding: 2rem;
+            font-size: 12px;
+            flex: 0 0 23%;
+            max-width: 23%;
+
+            .sidebar-accordion-menu {
+
+
+                >a {
+
+                    font-size: 11px;
+
+
+                }
+
+            }
+        }
+
+        >section {
+            flex: 0 0 77%;
+            max-width: 77%;
+
+            .regal-item {
+
+                .regal-slider-container {
+
+
+                    .regal-slider-wrapper {
+
+                        .regal-slider-page {
+
+                            a {
+
+                                padding: 1.7rem;
+                              
+                                left: 17px;
+                        
+                                right: 17px;
+
+                                &::before {
+
+                                    top: 1.7rem;
+
+                                    background-size: calc(100% - 3.4rem);
+
+                                }
+                            
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .category-page-content {
+
+
+        >aside {
+            display: none;
+        }
+
+        >section {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            .page-title {
+
+                margin: 140px 0;
+
+
+                .white-text {}
+
+                .red-text {
+
+                    transform: translateX(-60%);
+
+                }
+            }
+
+
+
+            .regal-slider-arrows {
+                display: none;
+
+
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .category-page-content {
+
+
+
+
+        >section {
+            .regal-item {
+
+                .regal-slider-container {
+
+
+                    .regal-slider-wrapper {
+
+
+                        .regal-slider-page {
+
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            padding: 66.666666% 0 0 0;
+
+
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:576px) {
+    .category-page-content {
+
+
+
+        >section {
+
+            .page-title {
+
+                margin: 120px 0;
+
+
+                .white-text {
+
+                    font-size: 2.8rem;
+                }
+
+                .red-text {
+
+                    transform: translateX(-55%);
+
+                    font-size: 6.4rem;
+                }
+            }
+
+            .regal-item {
+
+                .regal-slider-container {
+
+
+                    .regal-slider-wrapper {
+
+
+                        .regal-slider-page {
+
+                        
+
+
+                            a {
+
+                                padding: 1rem;
+                                left: 15px;
+                                right: 15px;
+
+
+                                &::before {
+
+                                    top: 1rem;
+
+                                    background-size: calc(100% - 2rem);
+
+                                }
+                                img {
+                                
+                                    height: calc(100% - 33px);
+                             
+    
+    
+                                }
+                                .item-title {
+                            
+                                    font-size: 13px;
+                                    margin-top: 16px;
+                          
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:357px) {
+    .category-page-content {
+
+
+
+        >section {
+
+            .page-title {
+
+                margin: 110px 0;
+
+
+                .white-text {}
+
+                .red-text {
+
+                    transform: translateX(-50%);
+
+                    font-size: 5.4rem;
+                }
+            }
+
+            .regal-item {
+
+                .regal-slider-container {
+
+
+                    .regal-slider-wrapper {
+
+
+                        .regal-slider-page {
+
+
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            padding: 133.333333% 0 0 0;
+
+                       
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

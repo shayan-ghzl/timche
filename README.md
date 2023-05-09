@@ -1,8 +1,8 @@
 # Timche
-this is a html template, Made on September - October 2020
+This is a html template, Made on September - October 2020
 
 # Technology
-html, css, scss, js, gulp automation
+Html, css, scss, js, gulp automation
 
 ## Pages
 You may want to see [Home Page](https://shayan-ghzl.github.io/timche.html).<br />

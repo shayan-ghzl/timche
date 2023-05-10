@@ -6,6 +6,7 @@ const gulpSass = require('gulp-sass');
 const sass = gulpSass(dartSass);
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
+const rename = require("gulp-rename");
 // ----------------------------------------------
 
 gulp.task('sass',async function () {
@@ -55,6 +56,9 @@ gulp.task('minify-prefixer',async function () {
 gulp.task('minify-css', async function () {
   return gulp.src('./assets/css/*.css')
     .pipe(cleanCSS({ compatibility: 'ie8' }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest('./assets/css/min'));
 });
 

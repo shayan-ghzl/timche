@@ -5,7 +5,7 @@ This is a html template, Made on September - October 2020
 Html, css, scss, js, gulp automation
 
 ## Pages
-You may want to see [Home Page](https://shayan-ghzl.github.io/timche.html).<br />
+You may want to see [Home Page](https://shayan-ghzl.github.io/timche/index.html).<br />
 You may want to see [Search Page](https://shayan-ghzl.github.io/timche/search.html).<br />
 You may want to see [Single Page](https://shayan-ghzl.github.io/timche/single.html).<br />
 You may want to see [User Manager Page](https://shayan-ghzl.github.io/timche/user-manager.html).<br />
